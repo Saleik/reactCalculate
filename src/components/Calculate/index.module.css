@@ -1,0 +1,14 @@
+.container {
+	align-self: center;
+	height: 45vh;
+	width: 70vw;
+	background-color: blueviolet;
+	border-radius: 2rem;
+	-webkit-border-radius: 2rem;
+	-moz-border-radius: 2rem;
+	-ms-border-radius: 2rem;
+	-o-border-radius: 2rem;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 0.7fr 4fr;
+}

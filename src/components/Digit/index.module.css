@@ -1,0 +1,6 @@
+.container {
+	display: grid;
+	grid-template-columns: calc(1fr / 3);
+	grid-template-rows: 0.25fr;
+	grid-auto-flow: column;
+}
