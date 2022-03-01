@@ -6,19 +6,19 @@ const Operators = () => {
 	return (
 		<div className={styles.container}>
 			<div>
-				<Button>&#247;</Button>
+				<Button value='/'>&#247;</Button>
 			</div>
 			<div>
-				<Button>&#215;</Button>
+				<Button value='*'>&#215;</Button>
 			</div>
 			<div>
-				<Button>&#8722;</Button>
+				<Button value='-'>&#8722;</Button>
 			</div>
 			<div>
-				<Button>&#43;</Button>
+				<Button value='+'>&#43;</Button>
 			</div>
 			<div>
-				<Button>&#61;</Button>
+				<Button value='total'>&#61;</Button>
 			</div>
 		</div>
 	);

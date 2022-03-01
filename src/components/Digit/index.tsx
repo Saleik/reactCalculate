@@ -5,47 +5,45 @@ import Button from '../Button';
 const Digit = () => {
 	return (
 		<div className={styles.container}>
+			<div className={styles.extends}>
+				<Button value='reset'>AC</Button>
+			</div>
+
 			<div>
-				<Button>AC</Button>
+				<Button value='percent'>&#37;</Button>
 			</div>
 			<div>
-				<Button>&#43;&#8725;&#8722;</Button>
+				<Button value={9}>9</Button>
 			</div>
 			<div>
-				<Button>&#37;</Button>
+				<Button value={8}>8</Button>
 			</div>
 			<div>
-				<Button>9</Button>
+				<Button value={7}>7</Button>
 			</div>
 			<div>
-				<Button>8</Button>
+				<Button value={6}>6</Button>
 			</div>
 			<div>
-				<Button>7</Button>
+				<Button value={5}>5</Button>
 			</div>
 			<div>
-				<Button>6</Button>
+				<Button value={4}>4</Button>
 			</div>
 			<div>
-				<Button>5</Button>
+				<Button value={3}>3</Button>
 			</div>
 			<div>
-				<Button>4</Button>
+				<Button value={2}>2</Button>
 			</div>
 			<div>
-				<Button>3</Button>
+				<Button value={1}>1</Button>
+			</div>
+			<div className={styles.extends}>
+				<Button value={0}>0</Button>
 			</div>
 			<div>
-				<Button>2</Button>
-			</div>
-			<div>
-				<Button>1</Button>
-			</div>
-			<div className={styles.zero}>
-				<Button>0</Button>
-			</div>
-			<div>
-				<Button>.</Button>
+				<Button value='.'>.</Button>
 			</div>
 		</div>
 	);

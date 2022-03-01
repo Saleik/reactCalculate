@@ -2,7 +2,7 @@
 
 ## Pet project React
 
-Side de project, développement d'une calculate sous React.
+Side project, développement d'une calculatrice sous React.
 
 ## Installation
 

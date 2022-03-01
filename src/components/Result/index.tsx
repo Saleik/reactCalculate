@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './index.module.css';
 
-const Result = () => {
-	return <div className={styles.container}>Result</div>;
+type Props = {
+	children: React.ReactNode;
+};
+
+const Result = ({ children }: Props) => {
+	return <div className={styles.container}>{children}</div>;
 };
 
 export default Result;
