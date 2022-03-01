@@ -1,0 +1,10 @@
+/*Operator component*/
+.container {
+	display: grid;
+	background-color: #454ed4;
+	border-radius: 0 0 2rem 0;
+	-webkit-border-radius: 0 0 2rem 0;
+	-moz-border-radius: 0 0 2rem 0;
+	-ms-border-radius: 0 0 2rem 0;
+	-o-border-radius: 0 0 2rem 0;
+}

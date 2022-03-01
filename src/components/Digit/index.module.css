@@ -1,6 +1,29 @@
+/* Digit component */
+
 .container {
 	display: grid;
-	grid-template-columns: calc(1fr / 3);
-	grid-template-rows: 0.25fr;
-	grid-auto-flow: column;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 1fr;
+	justify-items: center;
+	align-items: center;
+	background: rgb(138, 43, 226);
+	background: linear-gradient(
+		180deg,
+		RGB(61, 36, 81) 0%,
+		rgba(15, 26, 68, 1) 100%
+	);
+	border-radius: 0 0 0 2rem;
+	-webkit-border-radius: 0 0 0 2rem;
+	-moz-border-radius: 0 0 0 2rem;
+	-ms-border-radius: 0 0 0 2rem;
+	-o-border-radius: 0 0 0 2rem;
+}
+
+.container > Div {
+	width: 100%;
+	height: 100%;
+}
+
+.zero {
+	grid-column: 1 / span 2;
 }

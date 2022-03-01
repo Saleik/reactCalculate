@@ -15,9 +15,13 @@
 	font: inherit;
 	margin: 0;
 	padding: 0;
+	color: #fff;
 }
 
 body {
+	display: grid;
+	height: 100vh;
+	align-content: center;
 	background-color: #000;
 	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 	font-family: Helvetica, sans-serif, sans-serif;
@@ -31,9 +35,10 @@ body {
 .center {
 	text-align: center;
 }
+/* App Component */
 
 .title {
-	color: #fff;
+	color: #8b4ba6;
 	padding: 1rem;
 	font-weight: 700;
 }
