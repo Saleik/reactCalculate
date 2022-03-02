@@ -1,6 +1,9 @@
-/* Type pour la formule à calculer */
 export type formula = {
 	firstValue: number;
 	operator: string;
 	secondValue: number;
+};
+
+export type Props = {
+	operation: formula;
 };
