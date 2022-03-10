@@ -1,49 +1,57 @@
 import React from 'react';
 import styles from './digit.module.css';
-import { Button } from '../Button/Button';
+import { DigitButton } from '../DigitButton/DigitButton';
+import { Props } from './types/types';
+import { ACTIONS_TYPES } from '../../Reducers/types/types';
 
-export const Digit = () => {
+export const Digit = ({ dispatch }: Props) => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.extends}>
-				<Button value='reset'>AC</Button>
-			</div>
-
-			<div>
-				<Button value='percent'>&#37;</Button>
-			</div>
-			<div>
-				<Button value={9}>9</Button>
+			<div className={styles.span_2}>
+				<button
+					className={styles.button}
+					onClick={() => dispatch({ type: ACTIONS_TYPES.CLEAR })}>
+					AC
+				</button>
 			</div>
 			<div>
-				<Button value={8}>8</Button>
+				<button
+					className={styles.button}
+					onClick={() => dispatch({ type: ACTIONS_TYPES.DELETE_VALUE })}>
+					DEL
+				</button>
 			</div>
 			<div>
-				<Button value={7}>7</Button>
+				<DigitButton digit='9' dispatch={dispatch} />
+				<div></div>
+				<DigitButton digit='8' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={6}>6</Button>
+				<DigitButton digit='7' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={5}>5</Button>
+				<DigitButton digit='6' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={4}>4</Button>
+				<DigitButton digit='5' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={3}>3</Button>
+				<DigitButton digit='4' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={2}>2</Button>
+				<DigitButton digit='3' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value={1}>1</Button>
-			</div>
-			<div className={styles.extends}>
-				<Button value={0}>0</Button>
+				<DigitButton digit='2' dispatch={dispatch} />
 			</div>
 			<div>
-				<Button value='.'>.</Button>
+				<DigitButton digit='1' dispatch={dispatch} />
+			</div>
+			<div>
+				<DigitButton digit='0' dispatch={dispatch} />
+			</div>
+			<div className={styles.span_3}>
+				<DigitButton digit='.' dispatch={dispatch} />
 			</div>
 		</div>
 	);

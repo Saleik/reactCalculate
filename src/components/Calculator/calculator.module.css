@@ -13,7 +13,7 @@
 	-o-border-radius: 2rem;
 	display: grid;
 	grid-template-columns: 3fr 1fr;
-	grid-template-rows: 0.7fr 4fr;
+	grid-template-rows: 1fr 4fr;
 }
 
 @media (min-width: 768px) {

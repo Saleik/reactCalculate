@@ -1,33 +1,30 @@
-import React, { useState } from 'react';
-import { formula } from '../Formula/types/types';
+import React, { Reducer, ReducerState, useReducer } from 'react';
 import { Digit } from '../Digit/Digit';
-import { Formula } from '../Formula/Formula';
-import { Operators } from '../Operators/Operators';
-import { Result } from '../Result/Result';
+import { Output } from '../Output/Output';
+import { Operation } from '../Operation/Operation';
 import styles from './calculator.module.css';
+import { logicReducer } from '../../Reducers/logicReducer';
 
-export interface IDefaultState {
-	formula: formula;
-	total: number;
-}
 export const Calculator = () => {
-	const defaultState: IDefaultState = {
-		formula: {
-			firstValue: 0,
-			operator: '',
-			secondValue: 0,
-		},
-		total: 0,
-	};
-
-	const [result, setResult] = useState(defaultState);
+	const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
+		logicReducer,
+		{
+			currentOperand: '',
+			previousOperand: '',
+			operation: '',
+			overwrite: false,
+		}
+	);
 
 	return (
 		<div className={styles.container}>
-			<Formula operation={result.formula} />
-			<Result>{result.total ? result.total : result.formula.firstValue}</Result>
-			<Digit />
-			<Operators />
+			<Output
+				previousOperand={previousOperand}
+				currentOperand={currentOperand}
+				operation={operation}
+			/>
+			<Digit dispatch={dispatch} />
+			<Operation dispatch={dispatch} />
 		</div>
 	);
 };
