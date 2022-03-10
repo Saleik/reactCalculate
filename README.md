@@ -15,7 +15,6 @@ Side project, développement d'une calculatrice sous React.
 
 > ReactJS
 > Typescript
-> Jest
 
 ## License
 
