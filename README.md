@@ -11,6 +11,8 @@ Side project, développement d'une calculatrice sous React.
 - De même avec la commande "yarn dev"
 - Et c'est parti ! :smile:
 
+[Vous pouvez toujours aussi l'essayer en ligne](https://calculator-48691e.netlify.app/)
+
 ## Techno
 
 > ReactJS
