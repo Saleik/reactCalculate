@@ -1,14 +1,8 @@
-export const evaluate = ({
-	previousOperand,
-	currentOperand,
-	operation,
-}: {
-	previousOperand: string;
-	currentOperand: string;
-	operation: string;
-}): string => {
-	const prev = parseFloat(previousOperand);
-	const curr = parseFloat(currentOperand);
+import { InitialState } from './../Reducers/types/types';
+export const evaluate = (state: InitialState): string => {
+	const { previousOperand, currentOperand, operation } = state;
+	const prev = parseFloat(previousOperand!);
+	const curr = parseFloat(currentOperand!);
 
 	if (isNaN(prev) || isNaN(curr)) return '';
 	let computation = '';

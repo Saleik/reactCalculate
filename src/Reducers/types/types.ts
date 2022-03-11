@@ -15,8 +15,10 @@ export interface ACTIONS {
 }
 
 export interface InitialState {
-	currentOperand: string;
-	previousOperand: string;
-	operation: string;
-	overwrite: boolean;
+	currentOperand?: string | null;
+	previousOperand?: string | null;
+	operation?: string | null;
+	overwrite?: boolean;
 }
+
+export type defaultState = InitialState | {};

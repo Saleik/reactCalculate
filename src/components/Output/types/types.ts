@@ -1,5 +1,5 @@
 export type Props = {
-	previousOperand: string;
-	currentOperand: string;
-	operation: string;
+	previousOperand: string | null | undefined;
+	currentOperand: string | null | undefined;
+	operation: string | null | undefined;
 };

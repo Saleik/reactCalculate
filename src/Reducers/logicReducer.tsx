@@ -1,5 +1,10 @@
 import { evaluate } from '../utils/evaluate';
-import { ACTIONS_TYPES, ACTIONS, InitialState } from './types/types';
+import {
+	ACTIONS_TYPES,
+	ACTIONS,
+	InitialState,
+	defaultState,
+} from './types/types';
 
 export const logicReducer = (
 	state: InitialState,
@@ -18,7 +23,7 @@ export const logicReducer = (
 
 			if (payload.digit === '0' && state.currentOperand === '0') return state;
 
-			if (payload.digit === '.' && state.currentOperand.includes('.'))
+			if (payload.digit === '.' && state.currentOperand?.includes('.'))
 				return state;
 			return {
 				...state,
@@ -62,7 +67,7 @@ export const logicReducer = (
 
 			return {
 				...state,
-				currentOperand: evaluate(state),
+				currentOperand:evaluate(state),
 				operation: null,
 				previousOperand: null,
 				overwrite: true,

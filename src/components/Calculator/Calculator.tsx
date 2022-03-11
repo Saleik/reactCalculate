@@ -1,4 +1,4 @@
-import React, { Reducer, ReducerState, useReducer } from 'react';
+import React, { useReducer } from 'react';
 import { Digit } from '../Digit/Digit';
 import { Output } from '../Output/Output';
 import { Operation } from '../Operation/Operation';
@@ -8,12 +8,7 @@ import { logicReducer } from '../../Reducers/logicReducer';
 export const Calculator = () => {
 	const [{ currentOperand, previousOperand, operation }, dispatch] = useReducer(
 		logicReducer,
-		{
-			currentOperand: '',
-			previousOperand: '',
-			operation: '',
-			overwrite: false,
-		}
+		{}
 	);
 
 	return (

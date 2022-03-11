@@ -6,11 +6,11 @@
 	grid-auto-rows: 1fr;
 	justify-items: center;
 	align-items: center;
-	background: rgb(138, 43, 226);
+	background: rgb(0, 0, 0);
 	background: linear-gradient(
 		180deg,
-		RGB(61, 36, 81) 0%,
-		rgba(15, 26, 68, 1) 100%
+		rgba(0, 0, 0, 1) 10%,
+		rgba(11, 57, 232, 1) 100%
 	);
 	border-radius: 0 0 0 2rem;
 	-webkit-border-radius: 0 0 0 2rem;

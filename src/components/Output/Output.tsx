@@ -11,11 +11,15 @@ export const Output = ({
 	return (
 		<div className={styles.container}>
 			<div>
-				{formatOperand(previousOperand)}
+				{previousOperand === '' || previousOperand == null
+					? previousOperand
+					: formatOperand(previousOperand)}
 				{operation}
 			</div>
 			<div className={styles.currentOperand}>
-				{formatOperand(currentOperand)}
+				{currentOperand === '' || currentOperand == null
+					? currentOperand
+					: formatOperand(currentOperand)}
 			</div>
 		</div>
 	);
