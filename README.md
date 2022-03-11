@@ -9,7 +9,7 @@ Side project, développement d'une calculatrice sous React.
 - Cloner le repo
 - Lancer la commande 'yarn install' au terminal du dossier
 - De même avec la commande "yarn dev"
-- Et c'est parti ! :smile:
+- Et c'est parti !
 
 [Vous pouvez toujours aussi l'essayer en ligne](https://calculator-48691e.netlify.app/) :smile:
 
