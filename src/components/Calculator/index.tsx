@@ -1,1 +1,1 @@
-import { Calculator } from './calculator';
+import { Calculator } from './Calculator';
